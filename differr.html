@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 50;
+        var a = 100;
+        console.log(a);//100 updated
+        let b = 20;
+        let b = 50;
+        console.log(b);//Uncaught SyntaxError: Identifier 'b' has already been declared
+        const c = 9;
+        const c = 12;
+        console.log(c);//Uncaught SyntaxError: Identifier 'c' has already been declared
+        var d = 7;
+        let d = 5;
+        console.log(d);//Uncaught SyntaxError: Identifier 'd' has already been declared 
+        var e = 10;
+        const e = 20;
+        console.log(e);//Uncaught SyntaxError: Identifier 'e' has already been declared 
+        let f = 9;
+        var f = 4;
+        console.log(f);//Uncaught SyntaxError: Identifier 'f' has already been declared 
+        let g = 10;
+        const g = 5;
+        console.log(g);//Uncaught SyntaxError: Identifier 'g' has already been declared 
+        const h = 14;
+        var h = 8;
+        console.log(h);//Uncaught SyntaxError: Identifier 'h' has already been declared 
+        const i = 5;
+        let i = 7;
+        console.log(i);//Uncaught SyntaxError: Identifier 'i' has already been declared 
+        var j = 6;
+        j = 7;
+        console.log(j);//7
+        let k = 30;
+        k = 35;
+        console.log(k);//25
+        const l = 40;
+        l = 12;
+        console.log(l);//Uncaught TypeError: Assignment to constant variable.
+        var m;
+        console.log(m);//undefined
+        let n;
+        console.log(n);//undefined
+        const o;
+        console.log(o);//Uncaught SyntaxError: Missing initializer in const declaration 
+        str="priya"
+        console.log(str);//priya
+        ab="priya"
+        console.log(ab);//priya
+        p;
+        console.log(p);//Uncaught ReferenceError: p is not defined
+        q = 2 3 4;
+        console.log(q);//Uncaught SyntaxError: Unexpected number
+        r = 5;
+        console.log(r);//Uncaught SyntaxError: Unexpected number
+    </script>
+</body>
+</html>
